@@ -38,7 +38,7 @@ sys.path.insert(0, str(APP))    # the embedded Python does not put the script fo
 from dat_archive import HEADER_SIZE, Archive, Plan  # noqa: E402
 from text_table import FormatError, parse, serialize, split_template  # noqa: E402
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 ROOT = APP.parent
 TRANSLATIONS = ROOT / "translations"
 REMEMBERED = ROOT / "game_folder.txt"

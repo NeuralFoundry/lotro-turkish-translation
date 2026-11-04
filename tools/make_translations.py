@@ -2,7 +2,8 @@
 
 usage: python tools/make_translations.py <tm folder> [--game <folder with an untranslated client_local_English.dat>]
 
-tm files p1_*, p2_* and p3_* become 1-interface.tsv, 2-short-texts.tsv and 3-long-texts.tsv.
+tm files p1_*, p2_*, p3_* and u_* become 1-interface.tsv, 2-short-texts.tsv, 3-long-texts.tsv
+and 4-game-updates.tsv (text added by game updates).
 The key is a hash of the English text (lotro_tr.text_key), so the repository holds no game text.
 With --game every English string of the game is hashed as well, to prove no two strings share a key.
 """
@@ -16,7 +17,8 @@ from lotro_tr import NAME, text_key  # noqa: E402
 from dat_archive import Archive  # noqa: E402
 from text_table import parse  # noqa: E402
 
-GROUPS = (("p1_", "1-interface.tsv"), ("p2_", "2-short-texts.tsv"), ("p3_", "3-long-texts.tsv"))
+GROUPS = (("p1_", "1-interface.tsv"), ("p2_", "2-short-texts.tsv"), ("p3_", "3-long-texts.tsv"),
+          ("u_", "4-game-updates.tsv"))
 TM_HEADER = "# english\tturkish"
 
 
@@ -61,7 +63,7 @@ def main():
             f.writelines(f"{k}\t{rows[k]}\n" for k in sorted(rows))
         print(f"{out_name}: {len(rows)} translations")
     if leftover:
-        raise SystemExit(f"tm files outside p1_/p2_/p3_: {sorted(leftover)[:10]}")
+        raise SystemExit(f"tm files outside p1_/p2_/p3_/u_: {sorted(leftover)[:10]}")
 
     if args.game:
         archive = Archive(args.game / NAME)
