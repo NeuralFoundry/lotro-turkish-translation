@@ -1,0 +1,22 @@
+LOTRO Türkçe Yama
+
+Kurulum
+1. Oyunu ve başlatıcıyı kapatın.
+2. Kur.cmd dosyasına çift tıklayın. Windows izin isterse Evet deyin.
+3. "Kurulum tamamlandı" yazısını görünce oyunu her zamanki gibi başlatın.
+
+Kaldırma
+Oyunu kapatın ve Kaldir.cmd dosyasına çift tıklayın.
+
+Oyun güncellendikten sonra bazı yazılar yeniden İngilizce görünürse Kur.cmd dosyasını tekrar çalıştırın.
+
+Yardım ve ayrıntılar: https://github.com/NeuralFoundry/lotro-turkish-translation
+
+
+LOTRO Turkish Translation
+
+Install: close the game and the launcher, then double-click Kur.cmd.
+Uninstall: close the game, then double-click Kaldir.cmd.
+After a game update, run Kur.cmd again.
+
+Help and details: https://github.com/NeuralFoundry/lotro-turkish-translation
