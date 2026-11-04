@@ -30,7 +30,7 @@ Bir güncelleme bazı yazıları yeniden İngilizce yapabilir. Oyunu kapatıp **
 * Oyun dilinin **English** olması
 * Oyunun bulunduğu sürücüde yaklaşık 350 MB boş alan
 
-Başka bir program kurmanız gerekmez.
+**Python kurmanıza gerek yok.** Gerekli Python paketin içinde gelir. Başka bir program da gerekmez.
 
 ### Sık sorulan sorular
 
@@ -82,7 +82,7 @@ An update can turn some text back to English. Close the game and run **Kur.cmd**
 * Game language set to **English**
 * About 350 MB of free space on the game's drive
 
-Nothing else needs to be installed.
+**You do not need to install Python.** It comes inside the package. Nothing else needs to be installed.
 
 ### How it works
 
